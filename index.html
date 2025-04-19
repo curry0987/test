@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>蕨味轻食网站首页</title>
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <div class="nav bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-center space-x-4">
+            <a href="index.html" class="text-white hover:text-gray-300">网站首页</a>
+            <a href="yuanliu.html" class="text-white hover:text-gray-300">产品源流</a>
+            <a href="fangfa.html" class="text-white hover:text-gray-300 on">制作工艺</a>
+            <a href="zhinan.html" class="text-white hover:text-gray-300">食用指南</a>
+            <a href="wenhua.html" class="text-white hover:text-gray-300">蕨菜文化</a>
+            <a href="liuyan.html" class="text-white hover:text-gray-300">给我留言</a>
+        </div>
+        <div>
+            <img src="./微信图片_20250308140428.jpg" alt="网站logo" class="h-8 w-auto">
+        </div>
+    </div>
+    <!-- 大图片部分 -->
+    <div class="hero h-screen bg-cover bg-center" style="background-image: url('./VCG211454130249.jpg');">
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-white">
+            <h1 class="text-5xl font-bold mb-4">欢迎来到蕨根粉世界</h1>
+            <p class="text-xl">探索蕨根粉的独特魅力</p>
+        </div>
+    </div>
+    <!-- 产品展示部分 -->
+    <div class="product-showcase container mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="product-item">
+                <img src="./微信图片_20250327143816.png" alt="蕨根粉产品1" class="w-full h-64 object-cover rounded-md shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">美味蕨根粉</h2>
+                    <p class="text-gray-600">口感爽滑，营养丰富，是您的健康之选。</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="./微信图片_20250415203706.jpg" alt="蕨根粉产品2" class="w-full h-64 object-cover rounded-md shadow-md">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2">特色蕨根粉</h2>
+                    <p class="text-gray-600">独特风味，带给您不一样的美食体验。</p>
+                </div>
+            </div>
+        </div>
+    <!-- 团队介绍部分 -->
+    <div class="team-introduction container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">团队介绍</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="team-member bg-white p-6 rounded-md shadow-md">
+                <img src="./微信图片_20250308140428.jpg" alt="团队成员1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-center mb-2">杨振宇</h3>
+                <p class="text-gray-600 text-center">负责产品研发与品质把控。</p>
+            </div>
+            <div class="team-member bg-white p-6 rounded-md shadow-md">
+                <img src="./微信图片_20250308140428.jpg" alt="明阳" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-center mb-2">团队成员2</h3>
+                <p class="text-gray-600 text-center">专注于市场推广与销售。</p>
+            </div>
+            <div class="team-member bg-white p-6 rounded-md shadow-md">
+                <img src="./微信图片_20250308140428.jpg" alt="团队成员3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-center mb-2">朱家娟</h3>
+                <p class="text-gray-600 text-center">擅长客户服务与沟通。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 公众号二维码与电子邮箱部分 -->
+    <div class="contact-info bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">联系我们</h2>
+            <img src="./微信图片_20250308140428.jpg" alt="公众号二维码" class="w-32 h-32 mx-auto mb-4">
+            <p class="text-gray-600 mb-2">关注我们的公众号获取更多信息</p>
+            <p class="text-gray-600">电子邮箱：<a href="mailto:example@example.com" class="text-blue-500 hover:underline">example@example.com</a></p>
+        </div>
+    </div>
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/cn/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7493523196177088563',
+    },
+    componentProps: {
+      title: 'Coze',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_jDD1Vi9K63xSHEukwmJW6AZsalxRnEWoZyHTC7huVec8BxKOsEquUra5CsgRctmP',
+      onRefreshToken: function () {
+        return 'pat_jDD1Vi9K63xSHEukwmJW6AZsalxRnEWoZyHTC7huVec8BxKOsEquUra5CsgRctmP'
+      }
+    }
+  });
+</script>
+</body>
+
+</html>
+    
